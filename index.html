@@ -1,145 +1,459 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eflat is a Nigerian marketplace for electronics, fashion, home essentials and trusted services.">
-  <title>Eflat | Everyday things, thoughtfully delivered</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="index.js" defer></script>
-</head>
-<body>
-  <div class="utility-bar">
-    <p>Free delivery in Lagos, Abuja and Port Harcourt on orders over ₦50,000</p>
-    <p>+234 706 205 1220 <span aria-hidden="true">·</span> support@eflat.ng</p>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EflatTech Studio builds premium digital products, websites, and growth systems for ambitious tech brands."
+    />
+    <title>EflatTech Studio | Tech Branding & Digital Growth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="EflatTech Studio home">
+          <span class="brand-mark">E</span>
+          <span>EflatTech</span>
+        </a>
 
-  <header class="site-header" id="top">
-    <div class="header-main shell">
-      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-      <a class="brand" href="#top" aria-label="Eflat home"><span class="brand-mark">E</span><span>Eflat</span></a>
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <a href="#categories">Categories</a>
-        <a href="#featured">Shop</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-      </nav>
-      <form class="search-form" id="searchForm" role="search">
-        <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" placeholder="Search phones, fashion, home..." autocomplete="off">
-        <button type="submit">Search</button>
-      </form>
-      <div class="header-actions">
-        <button class="icon-button" id="wishlistButton" type="button" aria-label="View wishlist">♡<span class="count-badge" id="wishlistCount">0</span></button>
-        <button class="icon-button cart-button" id="cartButton" type="button" aria-label="View cart">🛒<span class="count-badge" id="cartCount">0</span></button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html" class="button button-small button-primary">Book a call</a>
+        </nav>
       </div>
-    </div>
-    <div class="mobile-search shell">
-      <form class="search-form" id="mobileSearchForm" role="search">
-        <span aria-hidden="true">⌕</span>
-        <input id="mobileSearchInput" type="search" placeholder="What are you looking for?" autocomplete="off">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow">THE GOOD STUFF, IN ONE PLACE</p>
-        <h1>Everything you need,<br><em>delivered across Nigeria.</em></h1>
-        <p class="hero-text">Shop smart electronics, useful home essentials and everyday style. Or book a trusted expert when you need a helping hand.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#featured">Start shopping <span>→</span></a>
-          <a class="button button-quiet" href="#services">Book a service <span>↗</span></a>
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <span class="eyebrow">Brand Strategy • Web Design • Growth Systems</span>
+            <div class="hero-badges" aria-label="Key competitive advantages">
+              <span>Premium positioning</span>
+              <span>Conversion-focused</span>
+            </div>
+            <h1>We help tech brands look premium and win more business online.</h1>
+            <p>
+              EflatTech Studio creates standout digital experiences for startups, SaaS teams,
+              agencies, and service businesses that want stronger positioning and measurable growth.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="button button-primary">Get a free consult</a>
+              <a href="work.html" class="button button-secondary">See our work</a>
+            </div>
+
+            <ul class="proof-list" aria-label="Key business results">
+              <li><strong>120+</strong> launches</li>
+              <li><strong>4.9/5</strong> client rating</li>
+              <li><strong>3.2x</strong> growth</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="dashboard-card">
+              <div class="dashboard-topbar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="dashboard-content">
+                <div class="mini-card revenue-card">
+                  <p>Qualified leads</p>
+                  <h3>1,426</h3>
+                  <span class="trend up">+41.8%</span>
+                </div>
+
+                <div class="chart-box">
+                  <div class="chart-bars" aria-label="Revenue growth chart">
+                    <span style="height: 28%"></span>
+                    <span style="height: 42%"></span>
+                    <span style="height: 36%"></span>
+                    <span style="height: 62%"></span>
+                    <span style="height: 70%"></span>
+                    <span style="height: 88%"></span>
+                    <span style="height: 100%"></span>
+                  </div>
+                </div>
+
+                <div class="mini-row">
+                  <div class="mini-card">
+                    <p>Revenue</p>
+                    <h4>$58.4K</h4>
+                  </div>
+                  <div class="mini-card accent">
+                    <p>Conversion</p>
+                    <h4>9.1%</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="trust-row">
-          <span><b>✓</b> Nationwide delivery</span>
-          <span><b>✓</b> Verified sellers</span>
-          <span><b>✓</b> Secure checkout</span>
+      </section>
+
+      <section class="trusted section-sm" aria-label="Client partners">
+        <div class="container trusted-strip">
+          <span>Trusted by modern teams at</span>
+          <div class="brands" aria-label="Brand names">
+            <span>Nova</span>
+            <span>Skyline</span>
+            <span>Cloudix</span>
+            <span>PixelForge</span>
+            <span>LaunchIQ</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container two-column">
+          <div class="about-copy" data-reveal>
+            <span class="eyebrow">Why leading brands trust us</span>
+            <h2>Premium design meets performance-focused strategy.</h2>
+            <p>
+              We combine positioning, high-converting UX, and technical execution to help businesses
+              stand out in crowded markets and turn attention into bookings, leads, and sales.
+            </p>
+            <div class="check-list">
+              <div>
+                <span>✓</span>
+                <p>Clear brand positioning and product messaging</p>
+              </div>
+              <div>
+                <span>✓</span>
+                <p>Conversion-focused website and landing page design</p>
+              </div>
+              <div>
+                <span>✓</span>
+                <p>Fast, responsive builds optimized for growth</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-panel" data-reveal>
+            <div class="stat-box">
+              <strong>92%</strong>
+              <span>of clients return for additional growth work</span>
+            </div>
+            <div class="stat-box muted">
+              <strong>2–4 wks</strong>
+              <span>average launch timeline for core projects</span>
+            </div>
+            <div class="stat-box accent">
+              <strong>24/7</strong>
+              <span>strategy support and optimization</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">What we do</span>
+            <h2>Digital systems built to attract, convert, and scale.</h2>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="service-card" data-reveal>
+              <div class="icon-box">01</div>
+              <h3>Brand Websites</h3>
+              <p>High-converting websites that position your business as credible, modern, and ready to grow.</p>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="icon-box">02</div>
+              <h3>Landing Pages</h3>
+              <p>Campaign-focused pages designed to capture demand and sharpen your conversion path.</p>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="icon-box">03</div>
+              <h3>Growth Design</h3>
+              <p>Strategic UX and messaging systems that improve trust, engagement, and customer action.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section showcase">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">Selected work</span>
+            <h2>Recent wins built for momentum.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card feature" data-reveal>
+              <div class="project-visual visual-one"></div>
+              <div class="project-copy">
+                <span>Platform launch</span>
+                <h3>VantaFlow</h3>
+                <p>Rebuilt a SaaS brand presence into a conversion-focused system tailored for enterprise buyers.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-visual visual-two"></div>
+              <div class="project-copy">
+                <span>Lead generation</span>
+                <h3>Northlane</h3>
+                <p>Created a modern, lead-driven site that clarified service offers and increased inbound quality.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-visual visual-three"></div>
+              <div class="project-copy">
+                <span>Creative brand</span>
+                <h3>Peak Labs</h3>
+                <p>Developed a premium digital identity that balanced authority, personality, and conversion strategy.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">Process</span>
+            <h2>A clear roadmap from strategy to launch.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card" data-reveal>
+              <span class="step-number">01</span>
+              <h3>Discover</h3>
+              <p>We define your target buyer, your core offer, and the messaging that makes you impossible to ignore.</p>
+            </div>
+
+            <div class="step-card" data-reveal>
+              <span class="step-number">02</span>
+              <h3>Design</h3>
+              <p>We shape a premium user experience that feels clear, modern, and conversion-ready.</p>
+            </div>
+
+            <div class="step-card" data-reveal>
+              <span class="step-number">03</span>
+              <h3>Build</h3>
+              <p>Your site is built for speed, responsiveness, and clean technical performance across devices.</p>
+            </div>
+
+            <div class="step-card" data-reveal>
+              <span class="step-number">04</span>
+              <h3>Launch</h3>
+              <p>We support publishing, optimization, and the refinements that help you keep growing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section testimonials">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">Client feedback</span>
+            <h2>Results that make businesses feel more confident online.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial" data-reveal>
+              “The new site gave us instant credibility. It finally matched the quality of the service we deliver.”
+              <footer>
+                <strong>Amelia Ross</strong>
+                <span>Founder, Nova Studio</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial" data-reveal>
+              “EflatTech helped us turn a basic online presence into a growth asset that actually converts.”
+              <footer>
+                <strong>Daniel Kim</strong>
+                <span>Marketing Lead, Orbit Labs</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial" data-reveal>
+              “The design felt premium, the strategy was sharp, and the entire process was smooth from start to finish.”
+              <footer>
+                <strong>Sophia Lee</strong>
+                <span>CEO, Canvas Group</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">Simple pricing</span>
+            <h2>Flexible plans for businesses ready to grow.</h2>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card" data-reveal>
+              <span class="plan-name">Starter</span>
+              <h3>$1,200</h3>
+              <p>For founders launching a sharper digital presence.</p>
+              <ul>
+                <li>One-page website</li>
+                <li>Responsive design</li>
+                <li>Basic SEO foundation</li>
+                <li>Launch support</li>
+              </ul>
+              <a href="#contact" class="button button-secondary">Get started</a>
+            </article>
+
+            <article class="price-card featured" data-reveal>
+              <span class="plan-name">Growth</span>
+              <h3>$2,800</h3>
+              <p>For brands ready to convert attention into revenue.</p>
+              <ul>
+                <li>Up to 5 key pages</li>
+                <li>Brand strategy guidance</li>
+                <li>Lead capture flows</li>
+                <li>Analytics and reporting</li>
+              </ul>
+              <a href="#contact" class="button button-primary">Most popular</a>
+            </article>
+
+            <article class="price-card" data-reveal>
+              <span class="plan-name">Scale</span>
+              <h3>Custom</h3>
+              <p>For growing teams that need a deeper digital system.</p>
+              <ul>
+                <li>Custom strategy</li>
+                <li>Advanced UX design</li>
+                <li>Ongoing optimization</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#contact" class="button button-secondary">Book consult</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="container faq-wrap">
+          <div class="section-heading" data-reveal>
+            <span class="eyebrow">FAQ</span>
+            <h2>Questions we hear before launch.</h2>
+          </div>
+
+          <div class="faq-list" data-reveal>
+            <div class="faq-item active">
+              <button class="faq-question" type="button" aria-expanded="true">
+                How long does a project usually take?
+              </button>
+              <div class="faq-answer">
+                <p>Most projects take 2 to 6 weeks, depending on complexity, revision flow, and content readiness.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Do you build only one-page websites?
+              </button>
+              <div class="faq-answer">
+                <p>No. We create marketing websites, landing pages, service platforms, and conversion-focused experiences for growth.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Can you help with messaging and positioning?
+              </button>
+              <div class="faq-answer">
+                <p>Yes. Our process includes messaging clarity, story structure, and branded design that aligns with your audience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta-band">
+        <div class="container cta-inner" data-reveal>
+          <div>
+            <span class="eyebrow light">Ready to grow?</span>
+            <h2>Build a digital presence that actually attracts customers.</h2>
+          </div>
+          <a href="#contact-form" class="button button-light">Book a strategy call</a>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-reveal>
+            <span class="eyebrow">Start a conversation</span>
+            <h2>Tell us what you’re building.</h2>
+            <p>
+              Share your business goals and we’ll help shape the right digital strategy for your next stage of growth.
+            </p>
+            <ul>
+              <li>Brand direction and positioning</li>
+              <li>Website and landing page design</li>
+              <li>Conversion-focused implementation</li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form" data-reveal>
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field-group">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Business or brand" />
+            </div>
+
+            <div class="field-group">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals" required></textarea>
+            </div>
+
+            <button type="submit" class="button button-primary full-width">Send inquiry</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> EflatTech Studio.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <div class="hero-sticker">NEW<br><strong>WAYS<br>TO LIVE</strong></div>
-        <img src="img/hero-banner.png" alt="Featured electronics and lifestyle products" class="hero-image">
-      </div>
-    </section>
+    </footer>
 
-    <section class="section shell" id="categories">
-      <div class="section-heading"><div><p class="eyebrow">FIND YOUR NEXT FAVOURITE</p><h2>Shop by category</h2></div><p>Good things, grouped neatly.</p></div>
-      <div class="category-grid" id="categoryGrid"></div>
-    </section>
-
-    <section class="section shell" id="featured">
-      <div class="section-heading"><div><p class="eyebrow">POPULAR RIGHT NOW</p><h2>Featured products</h2></div><a class="text-link" href="#featured">View all <span>→</span></a></div>
-      <div class="product-grid" id="featuredGrid"></div>
-    </section>
-
-    <section class="sale-band shell">
-      <div><p class="eyebrow">LIMITED TIME</p><h2>Small prices.<br><em>Big mood.</em></h2><p>Save on top picks this week, while they last.</p></div>
-      <a class="button button-light" href="#sale">Shop the sale <span>→</span></a>
-    </section>
-
-    <section class="section shell" id="sale">
-      <div class="section-heading"><div><p class="eyebrow">DEALS WORTH A DOUBLE TAKE</p><h2>Save big on top picks</h2></div><span class="sale-note">Prices updated daily</span></div>
-      <div class="product-grid" id="saleGrid"></div>
-    </section>
-
-    <section class="section shell" id="new-arrivals">
-      <div class="section-heading"><div><p class="eyebrow">JUST LANDED</p><h2>New arrivals</h2></div><a class="text-link" href="#new-arrivals">See new things <span>→</span></a></div>
-      <div class="product-grid" id="newGrid"></div>
-    </section>
-
-    <section class="service-section" id="services">
-      <div class="shell"><div class="section-heading light-heading"><div><p class="eyebrow">MORE THAN A MARKETPLACE</p><h2>Trusted services</h2></div><p>Book an expert, right from your account.</p></div><div class="service-grid" id="serviceGrid"></div></div>
-    </section>
-
-    <section class="section shell testimonials" id="about">
-      <div class="section-heading"><div><p class="eyebrow">REAL WORDS, REAL PEOPLE</p><h2>What our customers say</h2></div></div>
-      <div class="quote-grid"><article class="quote-card"><div class="stars">★★★★★</div><blockquote>“My order arrived in Lagos within two days and the packaging was excellent. Eflat has become my go-to for electronics.”</blockquote><footer><span>AO</span><div><strong>Adaeze Okonkwo</strong><small>Lagos</small></div></footer></article><article class="quote-card"><div class="stars">★★★★★</div><blockquote>“Booked a laptop repair service through the site and the technician was professional and quick. Very impressed.”</blockquote><footer><span>CE</span><div><strong>Chinedu Eze</strong><small>Abuja</small></div></footer></article><article class="quote-card"><div class="stars">★★★★<i>★</i></div><blockquote>“Great prices on phones and the tracking feature kept me updated the whole time. Will definitely order again.”</blockquote><footer><span>FB</span><div><strong>Fatima Bello</strong><small>Kano</small></div></footer></article></div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand"><a class="brand brand-light" href="#top"><span class="brand-mark">E</span><span>Eflat</span></a><p>Nigeria's marketplace for useful things, good style and trusted help, delivered nationwide.</p> <div class="footer-socials">
-  <a href="https://www.instagram.com/eflattech" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/eflattech" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://x.com/eflattech" target="_blank" class="social-icon">
-    <i class="fa-brands fa-x-twitter"></i>
-  </a>
-</div>
-      <div><h3>Shop</h3><a href="#categories">Phones & tablets</a><a href="#categories">Computers</a><a href="#categories">Home & kitchen</a><a href="#categories">Fashion</a></div>
-      <div><h3>Company</h3><a href="#about">About us</a><a href="#services">Services</a><a href="#top">Contact</a><a href="#top">FAQ</a></div>
-      <div class="newsletter"><h3>Stay in the loop</h3><p>New arrivals and Naira-friendly deals, occasionally.</p><form id="newsletterForm"><input id="emailInput" type="email" placeholder="Your email address" required><button class="button button-primary" type="submit">Join</button></form><p class="form-message" id="formMessage" aria-live="polite"></p></div>
-    </div>
-    <div class="footer-bottom shell"><span>© 2026 Eflat Nigeria Ltd.</span><span>Prices shown in Nigerian Naira (₦) · Test/sandbox checkout</span></div>
-  </footer>
-
-  <aside class="side-panel" id="cartPanel" aria-hidden="true" aria-labelledby="cartPanelTitle">
-    <div class="panel-header"><div><p class="eyebrow">YOUR BAG</p><h2 id="cartPanelTitle">Cart</h2></div><button class="close-button" data-close-panel type="button" aria-label="Close cart">×</button></div>
-    <div class="panel-content" id="cartItems"><p class="panel-empty">Your cart is empty.</p></div>
-    <div class="panel-footer"><div><span>Subtotal</span><strong id="cartTotal">₦0</strong></div><button class="button button-primary" id="checkoutButton" type="button">Continue to checkout <span>→</span></button></div>
-  </aside>
-  <aside class="side-panel" id="wishlistPanel" aria-hidden="true" aria-labelledby="wishlistPanelTitle">
-    <div class="panel-header"><div><p class="eyebrow">SAVED FOR LATER</p><h2 id="wishlistPanelTitle">Wishlist</h2></div><button class="close-button" data-close-panel type="button" aria-label="Close wishlist">×</button></div>
-    <div class="panel-content" id="wishlistItems"><p class="panel-empty">Your wishlist is empty.</p></div>
-  </aside>
-  <div class="panel-backdrop" data-close-panel></div>
-  <dialog class="booking-dialog" id="bookingDialog">
-    <button class="close-button dialog-close" data-close-dialog type="button" aria-label="Close booking form">×</button>
-    <p class="eyebrow">BOOK A TRUSTED EXPERT</p><h2 id="bookingTitle">Book a service</h2><p class="dialog-copy">Tell us where and when you need help. Our team will confirm the appointment.</p>
-    <form id="bookingForm"><label for="bookingName">Your name</label><input id="bookingName" required placeholder="Full name"><label for="bookingPhone">Phone number</label><input id="bookingPhone" required type="tel" placeholder="0800 000 0000"><label for="bookingDate">Preferred date</label><input id="bookingDate" required type="date"><button class="button button-primary" type="submit">Request booking <span>→</span></button><p class="form-message" id="bookingMessage" aria-live="polite"></p></form>
-  </dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <a class="whatsapp-button" href="https://wa.me/2347062051220?text=Hello%20Eflat%2C%20I%20need%20help%20with%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Chat with Eflat on WhatsApp">
-    <span class="whatsapp-icon" aria-hidden="true">☏</span>
-    <span class="whatsapp-label">Chat on WhatsApp</span>
-  </a>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
